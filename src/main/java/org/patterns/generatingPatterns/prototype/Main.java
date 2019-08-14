@@ -13,9 +13,9 @@ public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
 
 
-        Mersedes mersedes=new Mersedes("Mers", 1212, new Color(1233), new Engine(2));
+        Mercedes mercedes =new Mercedes("Mers", 1212, new Color(1233), new Engine(2));
         BMW bmw=new BMW("BMWdecorator", 122, new Color(2132), new Engine(3));
-        System.out.println(mersedes);
+        System.out.println(mercedes);
         System.out.println(bmw);
         Object clone=bmw.clone();
         System.out.println(clone);
