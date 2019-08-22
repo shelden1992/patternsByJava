@@ -12,14 +12,11 @@ public class IteratorNotificationImpl implements IteratorNotification {
 
     @Override
     public boolean hasNext() {
-        while (count < notificationList.size()) {
-            if (notificationList.get(count) != null) {
-
-                return true;
-            } else count++;
+        if (count >= notificationList.size() || notificationList.get(count) == null) {
+            return false;
         }
+        return true;
 
-        return false;
     }
 
     @Override

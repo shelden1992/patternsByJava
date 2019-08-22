@@ -109,7 +109,7 @@ public class Car2 {
             return this;
         }
 
-        public Car2 builder() {
+        public Car2 build() {
             return Car2.this;
         }
 
